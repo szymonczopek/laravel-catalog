@@ -86,9 +86,7 @@ class OrderController extends Controller
     {
          try{
             $order->delete();
-            /*return response()->json([
-                'status'=>'success']);*/
-             return redirect(route('order.index'));
+           return redirect(route('order.index'));
     
              
         }
